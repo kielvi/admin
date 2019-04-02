@@ -1,0 +1,62 @@
+.login {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  overflow: hidden; }
+  .login_form {
+    height: 240px;
+    padding: 20px;
+    background: #FFF;
+    border-radius: 5px; }
+    .login_form_container {
+      width: 370px;
+      height: 450px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      opacity: 0;
+      transform: translate(-50%, 0);
+      animation-name: fadeInUpLogin;
+      animation-delay: 1s;
+      animation-duration: 1s;
+      animation-fill-mode: forwards;
+      transition: opacity 1s ease-out, transform 1s ease-out; }
+    .login_form_logo {
+      max-height: 140px;
+      margin: 30px auto;
+      display: block;
+      stroke-dasharray: 2028; }
+      .login_form_logo path {
+        fill-opacity: 0;
+        stroke-color: #FFF;
+        stroke-width: 1px;
+        stroke-dasharray: 2028;
+        stroke-dashoffset: 2028;
+        animation-delay: 1.5s;
+        animation-name: svgLogo;
+        animation-duration: 4s;
+        animation-fill-mode: forwards; }
+
+@keyframes fadeInUpLogin {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 0); }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%); } }
+
+@keyframes svgLogo {
+  0% {
+    fill-opacity: 0;
+    stroke-dashoffset: 2028; }
+  50% {
+    fill-opacity: 0;
+    stroke: #FFF; }
+  100% {
+    fill-opacity: 1;
+    stroke-dashoffset: 0;
+    stroke: none; } }
+
+/*# sourceMappingURL=index.css.map */
