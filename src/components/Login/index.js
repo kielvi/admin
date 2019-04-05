@@ -2,6 +2,10 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import * as actions from '../../actions';
 
+import Input from '../Form-elements/Input';
+import Switch from '../Form-elements/Switch';
+import Button from '../Form-elements/Button';
+
 import './index.css';
 
 class Login extends Component {
@@ -14,7 +18,16 @@ class Login extends Component {
 
 					<div className="login_form">
 						<form method="post" action="">
+							<Input type={"text"} class={"form_control"} placeholder={"Email de acesso"} />
 
+							<Input type={"password"} class={"form_control"} placeholder={"Senha"} />
+
+							<Switch id={"switch"} label={"Lembrar meu acesso"} type={"switch"} />
+
+							<div className="form_group login_buttons">
+								<Button type={"button"} class={"login_buttom -remember"} text={"Esqueci minha senha"} />
+								<Button type={"button"} class={"login_buttom -submit"} text={"Acessar"} />
+							</div>
 						</form>
 					</div>
 				</div>

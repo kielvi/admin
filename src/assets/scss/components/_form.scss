@@ -1,0 +1,21 @@
+
+.form {
+	&_group {
+		margin-bottom: 1rem;
+	}
+
+	&_control {
+		width: 100%;
+		padding: 10px 0;
+		display: block;
+		border: none;
+		box-shadow: none;
+		border: {
+			radius: 0;
+			bottom: 1px solid rgba(0,0,0,0.1);
+		}
+		font-size: 1rem;
+		line-height: 1.25;
+		color: #55595c;
+	}
+}

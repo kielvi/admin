@@ -1039,6 +1039,33 @@
 .slideOutUp {
   animation-name: slideOutUp; }
 
+.t-left {
+  text-align: left; }
+
+.t-center {
+  text-align: center; }
+
+.t-right {
+  text-align: right; }
+
+.t-justify {
+  text-align: justify; }
+
+.form_group {
+  margin-bottom: 1rem; }
+
+.form_control {
+  width: 100%;
+  padding: 10px 0;
+  display: block;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  line-height: 1.25;
+  color: #55595c; }
+
 * {
   padding: 0;
   margin: 0;
@@ -1048,7 +1075,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Roboto', sans-serif;
-  color: #FFF; }
+  color: #FFF;
+  outline: none; }
 
 ::-moz-selection {
   color: #FFF;

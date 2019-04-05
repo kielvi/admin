@@ -16,12 +16,16 @@
       position: absolute;
       top: 50%;
       left: 50%;
-      opacity: 0;
-      transform: translate(-50%, 0);
-      animation-name: fadeInUpLogin;
-      animation-delay: 1s;
-      animation-duration: 1s;
-      animation-fill-mode: forwards;
+      transform: translate(-50%, -50%);
+      /* opacity: 0;
+			transform: translate(-50%, 0);
+			animation: {
+				name: fadeInUpLogin;
+				delay: 1s;
+				duration: 1s;
+				fill-mode: forwards;
+				
+			} */
       transition: opacity 1s ease-out, transform 1s ease-out; }
     .login_form_logo {
       max-height: 140px;
@@ -38,6 +42,31 @@
         animation-name: svgLogo;
         animation-duration: 4s;
         animation-fill-mode: forwards; }
+  .login_buttons {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; }
+  .login_buttom {
+    flex: 1 0 auto;
+    padding: 15px 0;
+    margin: 0;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    white-space: nowrap;
+    word-break: break-all;
+    cursor: pointer; }
+    .login_buttom.-remember {
+      margin-right: 15px;
+      background: #3d4c5a;
+      color: rgba(255, 255, 255, 0.5); }
+    .login_buttom.-submit {
+      background: #d32027;
+      color: #FFF; }
 
 @keyframes fadeInUpLogin {
   from {
@@ -58,5 +87,3 @@
     fill-opacity: 1;
     stroke-dashoffset: 0;
     stroke: none; } }
-
-/*# sourceMappingURL=index.css.map */
